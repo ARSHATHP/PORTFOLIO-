@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ARSHATH P - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 4rem;
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 150px; /* Adjust the size as needed */
+            height: 150px;
+            border-radius: 75%; /* Create a circular shape */
+            object-fit: cover; /* To ensure the image fills the circular area */
+            position: absolute; /* Add this */
+            top: 75px; /* Adjust top position as needed */
+            left: 75px; /* Adjust left position as needed */
+        }
+
+        nav {
+            background-color: rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none-;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        nav ul li a:hover{
+            color:#3f4041;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="C:\Users\Admin\Desktop\h-2050.jpg" alt="my profile" class="profile-picture">
+            <h1>ARSHATH P</h1>
+            <p>LEADERSHIP</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#education">EDUCATION</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">CONTACT</a></li>
+            <li><a href="#resume">RESUME</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>No man will make a great leader who wants to do it all himself, or to get all the credit for doing it</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>BCA <BR>
+                Suguna college of arts and science <BR>
+                2021-2024 <BR>
+                    <BR>
+                HSC <BR>
+                Nava jothi matric hr sec school  <BR>
+                2020-2021  <BR>
+
+        
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>PYTHON</li>
+                <li>SQL</li>
+                <li>JAVA BASICS</li>
+                <li>GIT AND GITHUB</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="CONTACT">
+        <div class="section-content">
+            <h2>CONTACT</h2>
+            <ul>
+                Mobile No: +91 9489506289<br>
+                Gmail- arshath0225@gmail.com <br>
+                Address: 7/1B,padma nivas, <br>
+                Mondaikadu, <br>
+                kaniyakumari-629252 <br>
+
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+<footer>
+        <p>&copy; 2023 Nagasanjai J</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
